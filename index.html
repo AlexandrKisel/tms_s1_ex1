@@ -1,308 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework 1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pep</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <style>
+    .bg_white {
+      background-color: rgb(255, 255, 255);
+    }
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+    .bg_red {
+      background-color: rgb(255, 0, 0);
+    }
 
-    <style>
-
-        .f_s_50_Roboto {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 59px;
-            color: #E72424;
-        }
-
-        .f_s_20_Open_Sans {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 27px;
-            color: #000000;
-        }
-
-        .f_s_15_Open_Sans {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 20px;
-            color: #000000;
-        }
-
-        .f_s_14_Open_Sans {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 19px;
-            color: #000000;
-        }
-
-        .f_s_12_Open_Sans {
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 16px;
-            color: #000000;
-        }
-
-        .f_s_36_Raleway {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 36px;
-            line-height: 42px;
-            color: #000000;
-        }
-
-        .f_s_30_Raleway {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 35px;
-            color: #000000;
-        }
-
-        .f_s_16_Raleway {
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-            color: #000000;
-        }
-
-        span.a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            padding: 10px;
-        }
-        
-        .circle_black_1 {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-            background-color: #212121;
-         }
-
-        .circle_red {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-            background-color: #E72424;
-        }
-
-        .circle_grey {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-            background-color: #86878B;
-        }
-
-        .circle_dark_grey {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-            background-color: #333333;
-        }
-
-        .circle_black_2 {
-            width: 50px;
-            height: 50px;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 25px;
-            background-color: #000000;
-        }
-
-        .icons {
-	        display: inline-block;
-            margin-left: 15px;
-            margin-right: 15px;
-        }
-  
-        .parent {
-	        height: 121px;
-            width: 740px;
-            background: #333333;
-        }
-        
-        .btn {
-            cursor: pointer;
-            display: inline-block;
-            border: 1px solid #FFFFFF;
-	        background: #333333;
-	        width: 135px;
-            height: 42px;
-            margin-left: 24px;
-            margin-top: 37px;
-            margin-bottom: 42px;
-        }
-
-        div.blocktext {
-            position: relative }
-        
-        div.blocktext a {
-            color: #FFFFFF;
-            text-decoration: none;
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            margin-right: -50%;
-            transform: translate(-50%, -50%)
-        }
-
-        .white_line {
-            position: absolute;
-            border: none;
-            background-color: white;
-            color: white;
-            width: 64px;
-            height: 1px;
-            margin-top: 41.5px; 
-            margin-left: 32px;
-        }
-
-        .red_line {
-            position: absolute;
-            border: none;
-            background-color: red;
-            color: red;
-            width: 64px;
-            height: 1px;
-            margin-left: 32px;
-            margin-top: 81px;
-        }
-
-      </style>
+    .f_s_20 {
+      font-size: 20px;
+    }
+  </style>
 </head>
 
 <body>
-    <h1 class="f_s_50_Roboto">Typography:</h1>
-    
-        <h2 class="f_s_20_Open_Sans">OPEN SANS</h2>
-        <h3 class="f_s_15_Open_Sans">OPEN SANS</h3>
-        <h4 class="f_s_14_Open_Sans">OPEN SANS</h4>
-        <h5 class="f_s_12_Open_Sans">OPEN SANS</h5>
+  <header>puper</header>
+  <main>
+    <section class="bg_white" id="section_1">
+      <h1>log<sub>a</sub>b</h1>
+      <h2>heading<sup>v</sup>C </h2>
+      <h3><a href="C:\Users\user\Desktop\png\pep.doc" download>ipsum</a> </h3>
+      <input type="text" value="asdfg">
+      <h4>heading 4</h4>
+      <img src="C:\Users\user\Desktop\png\pep.doc" alt="Google" srcset="">
+      <p>Lorem <b class="bg_red f_s_20">ipsum</b> dolor sit amet <strong>consectetur</strong> adipisicing elit. Quod
+        <i>placeat</i> deleniti
+        maiores voluptatibus quo
+        nisi ut
+        doloribus eum, optio iusto repudiandae, molestias ab architecto sapiente aperiam aliquam veniam cumque quidem.
+      </p>
+      <div>
+        <ul>
+          <li>jahdsf</li>
+          <li>lasjdhf</li>
+        </ul>
+        <ol>
+          <li>jahdsf</li>
+          <li>lasjdhf</li>
+        </ol>
+        <dl>
+          <li>jahdsf</li>
+          <li>lasjdhf</li>
+        </dl>
+      </div>
+    </section>
+    <section class="bg_red" id="section_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum tempora odio
+      accusantium
+      nulla atque qui,
+      aperiam quod molestias sapiente, nihil et, suscipit commodi facere assumenda earum nobis? Laboriosam, omnis
+      ratione.
+      Ipsa ducimus beatae fugit eos repellat nemo dolorem, odit, ipsum dolorum asperiores est eaque nihil neque eius?
+      Perferendis perspiciatis sunt quod dignissimos neque minima, totam, libero mollitia optio magni amet!
+      Dolore reprehenderit cumque debitis. Error saepe facere, aliquid dolorem deleniti deserunt voluptatum rerum iure
+      animi excepturi dolores pariatur nostrum maxime optio aliquam labore ex illo, architecto aperiam libero vitae
+      assumenda?
+      <p>
+        Consequuntur et assumenda itaque doloribus ipsam odio! Autem architecto a, eaque aut blanditiis ab possimus quam
+        nihil illum, facere dicta dolor, molestiae neque aliquam at ut? Iure similique fuga expedita.
+        Laudantium, ipsa repudiandae explicabo corporis nulla ullam distinctio quod voluptatibus labore ab, itaque nisi
+        debitis molestias similique, quaerat eum. Rerum, doloremque non impedit eaque culpa enim nemo commodi voluptates
+        harum?
+      </p>
+      <span>Nam iste</span> voluptas distinctio esse odit amet tenetur earum, vero fugit ratione beatae quas
+      reprehenderit
+      exercitationem aliquam sapiente eum vel doloremque? Fuga, ad alias. Veniam quam enim ad iure esse.
+      Placeat at molestiae mollitia debitis accusamus quaerat, error voluptatum quae? Eius, nulla sit voluptate sapiente
+      error omnis impedit. Tenetur tempora consequatur odit delectus quibusdam, mollitia vitae nihil ipsum provident
+      totam!
+      Illo deserunt fugit obcaecati? Ex, molestiae dolorem tempora, saepe adipisci nemo molestias, tempore asperiores
+      voluptatibus aspernatur fugit obcaecati accusantium ut culpa ad suscipit excepturi praesentium iure reiciendis
+      maxime optio doloribus!
+    </section>
+  </main>
+  <footer>
+    Lorem, dolor sit amet consectetur adipisicing elit. Ad sapiente fuga,
+    rem quia perspiciatis maxime numquam
+    harum repellendus nesciunt deserunt earum officia voluptas vitae itaque facere aspernatur mollitia assumenda
+    possimus.
+  </footer>
+  <video src="https://www.youtube.com/watch?v=xJk_A8xwZA8"></video>
+  <audio src=""></audio>
+  <audio controls>
+    <source src="name.ogg" type="audio/ogg">
+    <source
+      src="https://t4.bcbits.com/stream/7beea654fcc1835dadf39b79fd43f1ee/mp3-128/110463781?p=0&ts=1617128082&t=ad8ab7d195fba4ffb762596a1aefa0d0c33ca94e&token=1617128082_1ca826779e8340945a4bea657220b7c3e58d6fc4"
+      type="audio/mpeg">
+    <a href="sounds/name.mp3">Скачать name.mp3</a>
+  </audio>
 
-        <h2 class="f_s_36_Raleway">RALEWAY</h2>
-        <h3 class="f_s_30_Raleway">RALEWAY</h3>
-        <h4 class="f_s_16_Raleway">RALEWAY</h4>
+  <iframe title="#ПамагіМатолька / Красная Зелень" width="400" height="300" src="https://www.youtube.com/embed/qhKjFaZz7AI?feature=oembed" 
+  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen=""></iframe>
+  <iframe width="560" height="315" src="https://teachmeskills.by/contact-us"></iframe>
 
-    <h1 class="f_s_50_Roboto">Colors:</h1>
+  <form action="">
+    <input type="text">
+    <input type="date">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="number">
+    <select name="" id="">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
 
-    <div> 
-        <span class="a"> 
-            <div class="circle_black_1"></div>
-        </span>
+    <button type="submit">submit</button>
 
-        <span class="a">
-            <div class="circle_red"></div>
-        </span>
-
-        <span class="a">
-            <div class="circle_grey"></div>
-        </span>
-    
-        <span class="a">
-            <div class="circle_dark_grey"></div>
-        </span>
-
-        <span class="a">
-            <div class="circle_black_2"></div>
-        </span>
-    </div>
-    
-    <h1 class="f_s_50_Roboto">Icons:</h1>
-
-    <div class="icons">
-        <p>
-            <svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="23" height="30" fill="url(#pattern1)"/>
-                <defs>
-                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image1" transform="scale(0.0434783 0.0333333)"/>
-                    </pattern>
-                <image id="image1" width="23" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAeCAMAAADw+3VaAAAAAXNSR0IB2cksfwAAAHVQTFRFAAAA/4s4/4o4/4k5/4o3/4o3/4I5/4k3/78r/4k4/ok1/Yk0/oo4/4k2/4o7/4o2/4s4/4o4/4gz/4o5/4Iv/Yc1/4s4/4o3/4s4/4o4/4o4/4s4/4s4/4g1/4s4/4o4/4s3/ow5/4k3/4o3/4g4/4c4/4o4vDsXCAAAACd0Uk5TAP/8efWmCW8CaCgkU18PmOCiPBMrMH6ss+Xz7MUdzobM1EbajkC7FFYKkQAAAQdJREFUeJyNkulyhCAQhBsXVLxdjz2yd473f8T0oCjmR5Kusmb4amiGEeAvZYW1RfYDduasnM5tF+AxUouinafpQW10SCd+d2XG9r01bmPrcC/p84qsfAHXp6ysuDRMahSaIee6ZtQxkDA2qayUrnzdCHzRO38x/+jni/CMd+BNqRtOSn0uXd9YBIh7yubW29SelwO/lZeeJ5V2R85KHOcpZjssw04AtnXacjbRAEcxCrHYHIFBhhMMt5MRDUxaxsvKL35wsQ6dknk8VCFO+YRzcSnWxtRjSh/ToZNiP2Pk8ovjzc2N32mDnjnUiGUx3XUa8JF1fDsZwx3/ULVbVIV8v76e/a/8G4qoCTOmBNXtAAAAAElFTkSuQmCC"/>
-                </defs>
-            </svg> 
-        </p>
-    </div>
-    <div class="icons">
-        <p>
-            <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="37" height="26" fill="url(#pattern2)"/>
-                <defs>
-                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image2" transform="scale(0.027027 0.0384615)"/>
-                    </pattern>
-                <image id="image2" width="37" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAaCAMAAAAHbGVJAAAAAXNSR0IB2cksfwAAAFRQTFRFAAAA/4s4/4o2/ok4/4o4/ow5/4o4/4s2/4s4/4oz/4Yz/4BA/4s2/4gz/4o3/4s3/4s4/4s3/4s2/48z/4s3/Yw1/4o4/4o4/4k5/4g0/4gz/4gzs7zMJAAAABx0Uk5TAP+hee7U98HpMigEqEv9ncXiiBnLavpk3VgPHkiJDIAAAAC3SURBVHicnZPZEoMgDEVvrIoLigvu//+fxTLSwhSovQ/nIXNmSIAAP2ZcHsEso5K2liJpN2COSUQzoFyeBMLVWaeVhfvOLquuqho+GosRMfhorJQohY/GKogK+GisMklKXBQOs3szqnAi/o225RvgH6thXaPYvcjexN3uhzwfgEN8vrI4oOvO3Uv7v0j37rXFbIu51tT3E7DbP3mHrt/qvg9bhbZozgM59wJY49uxqnWUkVVr5fgEccwKnvTdELoAAAAASUVORK5CYII="/>
-                </defs>
-            </svg>
-        </p>
-    </div>
-    <div class="icons">
-        <p>
-            <svg width="21" height="33" viewBox="0 0 21 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <rect width="21" height="33" fill="url(#pattern3)"/>
-                <defs>
-                <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                <use xlink:href="#image3" transform="scale(0.047619 0.030303)"/>
-                </pattern>
-                <image id="image3" width="21" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAhCAMAAAABIhAfAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAANJQTFRFAAAA/4c4/4s4/4s3/3QX/4o2/4w6/4k5/4gz/4k2/4k4/4s3/4w4/4o4/4g6/4o4/4o3/401/4A7/4k3/4gz/4s2/4w3/4o0/4w3/4w5/4k2/4s4/4s3/4s2/4g1/4s2/4o5/5kz/4g0/4Mu/4o3/4A4/4s2/402/4o3/4k5/4s4/4s4/4o2/4s2/4o4/1VV/404/4w6/4o2/4w4/4k3/4gx/4o5/4k5/4s3/4Aw/4sy/4w1/4s3/4o4/4s1/4o4/4k4/4w3/4o4/445/4c4/4o5z/1swQAAAEZ0Uk5TAED/yAtMNWwPjcmthc1L7v0dGro8iF1ZKn6moL/BeOLLBVgnrCA5TIxj4Klt78ADTj6hfPUvwoLVEC5qtqVE4Zff6iRgVb4cH38AAADHSURBVHicZdLncsIwEATgRSEQAqGYDg6J6ab3hBRCff9XQi7RWbr9p292NKc5ATKx/yASofIQV/hIKhJKkxF9UpoifKZr06QZ0hfSLGlOYb6g0KJqkaol0jJphbQavLAmtS5YGkCTqw28cm0BbwzfHTi82gY6DLtyhB7TvjfvwA4T4jC6ELgBjixNx4FONMTUx5mO86C60HXp40pHrD3cbA3defphoP9VPvcGfnnqmtVviT8m4lfqgemfEEeGOInzhevVvkVOd12ZDQwdhToPAAAAAElFTkSuQmCC"/>
-                </defs>
-            </svg>   
-        </p>
-    </div>
-    <p>
-        <svg width="317" height="23" viewBox="0 0 317 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="317" height="23" fill="url(#pattern4)"/>
-            <defs>
-            <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image4" transform="scale(0.00315457 0.0434783)"/>
-            </pattern>
-            <image id="image4" width="317" height="23" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT0AAAAXCAMAAABOBWhLAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAADNQTFRFAAAAzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzM3gpogAAAABF0Uk5TACBwf2BA/7/Pj++v3xCfMFDcykzLAAAEG0lEQVR4nN1Z27LkKghtJYrXJP//tSOgSbpnJpJ9qutUDS/ppLzgAhZgv14sxgLA8vqWOFoewJqv7fB/CngS/NLqNsSYvI/wb4K3+G+il0t9vWrxoSon1GVFxKzzVJPxQ/KmVq263akHW8S4/EGn8hP0qhIM8MwIu/egWxeS77Iqtgj+Nyk6xV410uhklcORFw+f/Gboq9VY7DzN3hAve+PL6ZzkxbxFdypzhSNNldregYsAq/c6f6pjp6ga3tFrx37HzxGkmvkLDvj2vlDaZu7RFt/5RzuVYgvDjpdwzaiCz72jR5+06MExSzd+wREUeI1fp41aOLirx7rPqEAv9snse9s9HuQPReCudLw0Ib//gN5BED6rxjcxS5aY2N81UKLnE7vtES9lHu+pRywI7+HtTgTY2taHleqnLfHbnfwcPZ65UEiogmKI4Qm+R+/CTOFLK8f2+3l9w9IY8tBZoSd0BIL47T16iexYRcE23rbHvfMdmiCfYwXIT9A7Hg/EceAJWIMLvSIn9mM1D3zCGG1Sdi4TeMa5EJz7KyCO0Yq+rEWcsMy0GuhJSKQHPPYYvehD5JU53QgjX9Cb5k/Akyse6LkBoPgQTMwElL6MT5XrgEQaTzilHR7xWLG9BXyG3mtRFpaCVHDjZzi+KaFY/KeotpVdKG5nvpcJB8tpRlYHxvBGGgaE9FixNCd8iJ5aOlKkHHsfWezCe3MT4Ad46mQV/UjXt7zHXsTpxYnvweyEhJ47x2Cb+y30tigFIrE4pc1Uj3V0fcZBfFe20WxM9aHk51v0OFAdGSWKbbLG97bT91Kjnxl68EZ4bt1j6W9T1CXhrn0RGBpo0cNyBU/VPFQbUgYI3Vi39R7pZF4hS0G59Bx8J+x3ZQSBpekP0bs8FD67E/O3fFvTOL4evUt97v3I2veylZ6N1mntJgERTLAMWxCivc9lrrMjV+Q20Tm+hx5Zf+9eQ164dQ3UNwRwybpTMEjCcfw8CUISce2mlcO1soHn9R5v0pq7XKQ1+RZ6FdlIIFHhRug+Qe+SOVTg7SczGwVJS1ZvT3rZgp+28IJelQbKB/KGGQpUgntwQfISt01WWo77rtOKYcmkmbcR0B6gZ5aD+HQ3E3CBTJOiUXRJgZuGFiSTPnrkWxcRV0liM/TMe/ScTD65KWG3AYlZeS1dAxV65pJxUXmruJ/EtWl4kiopOPtozR3L56cpf53HIFY4i9iJerbPWIRbOohPcq5lcsGov74NAz4TVKHe2GXheoW9YVqCbtRdvEnobH6zxbjYE18dYE7Vi3K1ZxLTq+3O+oz3HgpxLVUsuWjvcJetSmpKmsvozwJ+HoHj+voIH0vBWzQFxJ9kaxZT3q/+aHnIiPMLnIuYBzMqfP6vETV/Gby3i9vfm8db+QXmGC9g7LWMtgAAAABJRU5ErkJggg=="/>
-            </defs>
-        </svg>    
-    </p>
-
-    <h1 class="f_s_50_Roboto">Buttons:</h1>
-
-    <div class="parent">
-        <div class="btn blocktext">
-            <a class="f_s_15_Open_Sans" href="https://megapesni.com/get/T_Nxed8nmk9kErshYpCKJw/1617600195/30f2c988/bobby-mcferrin-don039t-worry-be-happy.mp3" download>
-            Download
-            </a>
-        </div>
-    </div>
-
-    <h1 class="f_s_50_Roboto">Styling elements:</h1>
-    
-    <div class="parent">
-        <hr class="white_line">
-        <hr class="red_line">   
-    </div>
-
+  </form>
+  <table border="1">
+    <tr>
+      <th>kg</th>
+      <th>kg</th>
+      <th>kg</th>
+      <th>kg</th>
+      <th>kg</th>
+      <th>kg</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td colspan="2">1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
 </body>
+
 </html>
