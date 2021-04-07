@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding-left: 49px;
+    padding-top: 43px;
+}
+
+.f_s_50_Roboto {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 59px;
+    color: #E72424;
+}
+
+.f_s_20_Open_Sans {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.f_s_15_Open_Sans {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: #000000;
+}
+
+.f_s_14_Open_Sans {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.f_s_12_Open_Sans {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    color: #000000;
+}
+
+.f_s_36_Raleway {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.f_s_30_Raleway {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.f_s_16_Raleway {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+    color: #000000;
+}
+
+span.a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 38px 12px;
+}
+
+.circle_black_1 {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #212121;
+ }
+
+.circle_red {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #E72424;
+}
+
+.circle_grey {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #86878B;
+}
+
+.circle_dark_grey {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #333333;
+}
+
+.circle_black_2 {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #000000;
+}
+
+.icons {
+    display: inline-block;
+    margin: 42px 18px 38px 18px;
+}
+
+.icons_soc {
+    margin-bottom: 57px;
+}
+
+.parent {
+    height: 121px;
+    width: 740px;
+    background: #333333;
+    margin-top: 38px;
+    margin-bottom: 41px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #FFFFFF;
+    background: #333333;
+    width: 135px;
+    height: 42px;
+    margin-left: 24px;
+    margin-top: 37px;
+    margin-bottom: 42px;
+}
+
+div.blocktext {
+    position: relative }
+
+div.blocktext a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.white_line {
+    position: absolute;
+    border: none;
+    background-color: white;
+    color: white;
+    width: 64px;
+    height: 1px;
+    margin-top: 41.5px; 
+    margin-left: 32px;
+}
+
+.red_line {
+    position: absolute;
+    border: none;
+    background-color: red;
+    color: red;
+    width: 64px;
+    height: 1px;
+    margin-left: 32px;
+    margin-top: 81px;
+}
